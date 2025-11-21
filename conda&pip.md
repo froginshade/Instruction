@@ -20,6 +20,8 @@ conda remove -n *venv_name* *package_name*
 conda clean --all (--yes)
 
 # pip
+## 查看包
+pip list/show *package_name*
 ## 清理缓存
 pip cache purge
 
