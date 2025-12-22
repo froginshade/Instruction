@@ -60,6 +60,15 @@ git remote rename origin *repository_address*<br>
 git remote remove origin
 ## 查看远程仓库链接
 git remote -v
+## 强制使用仓库内容覆盖本地
+git fetch --all
+git reset --hard origin/main
+
+# 基础操作
+## 暂存本地修改
+git stash
+## 取出最近一次暂存
+git stash pop
 
 # .gitignore
 ## 基础
