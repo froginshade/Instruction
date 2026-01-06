@@ -1,6 +1,6 @@
 # conda虚拟环境
 ## 创建环境
-conda create -n *venv_name* python=*3.9*
+conda create -n *venv_name* python=*3.10*
 ## 激活环境
 conda activate *venv_name*
 ## 退出环境
@@ -13,6 +13,9 @@ conda info --envs
 conda config --remove-key channels
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.zju.edu.cn/anaconda-r/nvidia
+conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/pytorch
+conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/pytorch-lts
 conda config --set channel_priority flexible/strict
 
 ## 检查使用的channels
