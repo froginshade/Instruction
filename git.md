@@ -48,6 +48,12 @@ git branch -m *new_name*
 4. git checkout main/merge dev/push
 5. git tag -a v0.1.0 -m "*comment*"
 6. git push orign v0.1.0
+## 新电脑跟踪远程新分支
+1. git checkout main
+2. git pull
+3. git fetch
+4. git checkout -b dev origin/dev
+5. git branch -vv
 
 
 # 推送本地仓库到远程仓库
