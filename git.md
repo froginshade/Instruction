@@ -30,13 +30,25 @@ Host github.com
   ProxyCommand nc -V -x 127.0.0.1:7890 %h %p
 ````
 
-# 重命名本地Git分支
+# Git分支
 ## 查看本地分支
 git branch -a
-## 切换到需要重命名的分支
+## 创新新分支
+git branch *branch_name*
+## 切换分支
 git checkout *branch_name*
+## 创建并切换到分支
+git checkout -b *branch_name*
 ## 重命名
 git branch -m *new_name*
+## 利用分支的开发工作流
+1. git checkout -b dev
+2. git push -u origin dev (do it only once)
+3. git add/commit/push
+4. git checkout main/merge dev/push
+5. git tag -a v0.1.0 -m "*comment*"
+6. git push orign v0.1.0
+
 
 # 推送本地仓库到远程仓库
 ## 初始化本地仓库

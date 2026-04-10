@@ -124,3 +124,9 @@ int2(10)
 - 子文件夹       from xx.xx import func
 - 上级文件夹     from ..xx import func
 - 同级子文件夹   from ..xx.xx import func
+
+
+# 类
+## 抽象基类
+
+
