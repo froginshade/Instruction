@@ -11,12 +11,10 @@ conda remove -n *venv_name* --all
 conda info --envs
 ## 设置channels (全局)
 conda config --remove-key channels
-conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-forge/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config --add channels https://mirrors.zju.edu.cn/anaconda-r/nvidia
-conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/pytorch
-conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/pytorch-lts
-conda config --set channel_priority flexible/strict
+conda config --set channel_priority strict
+conda config --set solver libmamba
+conda config --set show_channel_urls yes
 
 ## 检查使用的channels
 conda config --show channels
