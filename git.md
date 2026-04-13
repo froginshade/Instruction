@@ -44,12 +44,13 @@ git branch -m *new_name*
 ## 利用分支的开发工作流
 1. git checkout main
 2. git pull origin main
-2. git checkout -b dev
-2. git push -u origin dev (do it only once)
-3. git add/commit/push
-4. git checkout main/merge dev/push origin main
-5. git tag -a v0.1.0 -m "*comment*"
-6. git push orign v0.1.0
+3. git checkout -b dev
+4. git push -u origin dev (do it only once)
+5. git add/commit/push
+6. git branch --set-upstream-to=origin/dev dev
+7. git checkout main/merge dev/push origin main
+8. git tag -a v0.1.0 -m "*comment*"
+9. git push orign v0.1.0
 ## 新电脑跟踪远程新分支
 1. git checkout main
 2. git pull
