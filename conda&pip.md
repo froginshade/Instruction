@@ -1,4 +1,4 @@
-# conda虚拟环境
+# Conda虚拟环境
 ## 创建环境
 conda create -n *venv_name* python=*3.10*
 ## 激活环境
