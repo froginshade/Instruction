@@ -10,11 +10,11 @@ conda remove -n *venv_name* --all
 ## 查看环境
 conda info --envs
 ## 设置channels (全局)
-conda config --remove-key channels
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
-conda config --set channel_priority strict
-conda config --set solver libmamba
-conda config --set show_channel_urls yes
+conda config --remove-key channels<br>
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/<br>
+conda config --set channel_priority strict<br>
+conda config --set solver libmamba<br>
+conda config --set show_channel_urls yes<br>
 
 ## 检查使用的channels
 conda config --show channels
