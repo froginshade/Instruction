@@ -48,10 +48,12 @@ git branch -m *new_name*
 4. git push -u origin dev (do it only once)
 5. git add/commit/push
 6. git branch --set-upstream-to=origin/dev dev
-7. git checkout main/merge dev/push origin main
-8. git tag -a v0.1.0 -m "*comment*"
-9. git push origin v0.1.0
-10. git describe --tags
+7. git checkout main
+8. git merge dev/
+9. git push origin main
+10. git tag -a v0.1.0 -m "*comment*"
+11. git push origin v0.1.0
+12. git describe --tags
 ## 新电脑跟踪远程新分支
 1. git checkout main
 2. git pull
@@ -99,3 +101,5 @@ git stash pop
 - ?任意一个字符
 - [abc]匹配abc中的任意字符
 - 
+## 生效
+git rm -r --cached . -f
